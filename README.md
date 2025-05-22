@@ -34,3 +34,27 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## Getting Started with the Admin Dashboard
+
+To access the admin dashboard, follow these steps:
+
+1. Navigate to `/admin/login` in your browser.
+2. Log in with your admin credentials.
+3. Once logged in, you will be redirected to the admin dashboard where you can manage users, payments, and settings.
+
+## Getting Started with the User Dashboard
+
+To access the user dashboard, follow these steps:
+
+1. Navigate to `/user/dashboard` in your browser.
+2. Log in with your user credentials.
+3. Once logged in, you will be redirected to the user dashboard where you can view your portfolio, watchlist, and price alerts.
+
+## Getting Started with the Payment Management Page
+
+To access the payment management page, follow these steps:
+
+1. Navigate to `/admin/payments` in your browser.
+2. Log in with your admin credentials.
+3. Once logged in, you will be redirected to the payment management page where you can view and manage payment history, subscriptions, and settings.

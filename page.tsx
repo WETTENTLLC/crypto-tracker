@@ -405,6 +405,158 @@ export default function AdminPayments() {
           </div>
         </div>
       </div>
+
+      <div className="bg-white shadow overflow-hidden sm:rounded-md mt-8">
+        <div className="px-4 py-5 sm:px-6">
+          <h3 className="text-lg leading-6 font-medium text-gray-900">User Subscriptions Management</h3>
+          <p className="mt-1 max-w-2xl text-sm text-gray-500">
+            Manage user subscriptions and their statuses.
+          </p>
+        </div>
+        <div className="border-t border-gray-200 px-4 py-5 sm:p-6">
+          <div className="grid grid-cols-1 gap-y-6 gap-x-4 sm:grid-cols-6">
+            <div className="sm:col-span-3">
+              <label htmlFor="subscription_user" className="block text-sm font-medium text-gray-700">
+                User Email
+              </label>
+              <div className="mt-1">
+                <input
+                  type="text"
+                  name="subscription_user"
+                  id="subscription_user"
+                  className="shadow-sm focus:ring-blue-500 focus:border-blue-500 block w-full sm:text-sm border-gray-300 rounded-md"
+                />
+              </div>
+            </div>
+
+            <div className="sm:col-span-3">
+              <label htmlFor="subscription_status" className="block text-sm font-medium text-gray-700">
+                Subscription Status
+              </label>
+              <div className="mt-1">
+                <select
+                  name="subscription_status"
+                  id="subscription_status"
+                  className="shadow-sm focus:ring-blue-500 focus:border-blue-500 block w-full sm:text-sm border-gray-300 rounded-md"
+                >
+                  <option>Active</option>
+                  <option>Inactive</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          
+          <div className="mt-6">
+            <button
+              type="button"
+              className="inline-flex items-center px-4 py-2 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+            >
+              Update Subscription
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div className="bg-white shadow overflow-hidden sm:rounded-md mt-8">
+        <div className="px-4 py-5 sm:px-6">
+          <h3 className="text-lg leading-6 font-medium text-gray-900">Payment History Management</h3>
+          <p className="mt-1 max-w-2xl text-sm text-gray-500">
+            View and manage the history of payments.
+          </p>
+        </div>
+        <div className="border-t border-gray-200 px-4 py-5 sm:p-6">
+          <div className="grid grid-cols-1 gap-y-6 gap-x-4 sm:grid-cols-6">
+            <div className="sm:col-span-3">
+              <label htmlFor="history_user" className="block text-sm font-medium text-gray-700">
+                User Email
+              </label>
+              <div className="mt-1">
+                <input
+                  type="text"
+                  name="history_user"
+                  id="history_user"
+                  className="shadow-sm focus:ring-blue-500 focus:border-blue-500 block w-full sm:text-sm border-gray-300 rounded-md"
+                />
+              </div>
+            </div>
+
+            <div className="sm:col-span-3">
+              <label htmlFor="history_date" className="block text-sm font-medium text-gray-700">
+                Payment Date
+              </label>
+              <div className="mt-1">
+                <input
+                  type="date"
+                  name="history_date"
+                  id="history_date"
+                  className="shadow-sm focus:ring-blue-500 focus:border-blue-500 block w-full sm:text-sm border-gray-300 rounded-md"
+                />
+              </div>
+            </div>
+          </div>
+          
+          <div className="mt-6">
+            <button
+              type="button"
+              className="inline-flex items-center px-4 py-2 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+            >
+              View Payment History
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div className="bg-white shadow overflow-hidden sm:rounded-md mt-8">
+        <div className="px-4 py-5 sm:px-6">
+          <h3 className="text-lg leading-6 font-medium text-gray-900">Payment Settings Management</h3>
+          <p className="mt-1 max-w-2xl text-sm text-gray-500">
+            Configure and manage payment settings.
+          </p>
+        </div>
+        <div className="border-t border-gray-200 px-4 py-5 sm:p-6">
+          <div className="grid grid-cols-1 gap-y-6 gap-x-4 sm:grid-cols-6">
+            <div className="sm:col-span-3">
+              <label htmlFor="settings_currency" className="block text-sm font-medium text-gray-700">
+                Default Currency
+              </label>
+              <div className="mt-1">
+                <select
+                  name="settings_currency"
+                  id="settings_currency"
+                  className="shadow-sm focus:ring-blue-500 focus:border-blue-500 block w-full sm:text-sm border-gray-300 rounded-md"
+                >
+                  <option>USD</option>
+                  <option>EUR</option>
+                  <option>GBP</option>
+                </select>
+              </div>
+            </div>
+
+            <div className="sm:col-span-3">
+              <label htmlFor="settings_tax" className="block text-sm font-medium text-gray-700">
+                Tax Rate (%)
+              </label>
+              <div className="mt-1">
+                <input
+                  type="number"
+                  name="settings_tax"
+                  id="settings_tax"
+                  className="shadow-sm focus:ring-blue-500 focus:border-blue-500 block w-full sm:text-sm border-gray-300 rounded-md"
+                />
+              </div>
+            </div>
+          </div>
+          
+          <div className="mt-6">
+            <button
+              type="button"
+              className="inline-flex items-center px-4 py-2 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+            >
+              Save Payment Settings
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
