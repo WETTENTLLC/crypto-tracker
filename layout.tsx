@@ -78,6 +78,18 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
                 >
                   Settings
                 </Link>
+                <Link 
+                  href="/admin/user-dashboard" 
+                  className="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
+                >
+                  User Dashboard
+                </Link>
+                <Link 
+                  href="/admin/payment-management" 
+                  className="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
+                >
+                  Payment Management
+                </Link>
               </nav>
             </div>
             <div className="flex items-center">
